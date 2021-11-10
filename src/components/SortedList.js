@@ -36,9 +36,9 @@ function SortedList() {
   return (
     <div>
       <ul>
-        {cities.map((currentCityStr) => (
-          <li key={currentCityStr}>{currentCityStr}</li>
-        ))}
+        {cities.map((currentCityStr) => {
+          return <li key={currentCityStr}>{currentCityStr}</li>;
+        })}
       </ul>
       <button onClick={handleSortAlphabetic}>Ordenar A-Z</button>
       <button onClick={handleSortInverseAlphabetic}>Ordenar Z-A</button>
